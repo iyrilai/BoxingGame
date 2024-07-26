@@ -3,19 +3,19 @@
 LMB - Left mouse button
 RMB - right mouse button
 
-#attack
+# attack
 LMB - attack_1
 LMB + 1 - attack_1
 LMB + 2 - attack_2
 LMB + 3 - attack_3
 
-#defense
+# defense
 RMB - defense_1
 RMB + 1 - defense_1
 RMB + 2 - defense_2
 
-#blocking with hands
+# blocking with hands
 Hold RMB
 
-#movement
+# movement
 **WASD**
