@@ -20,7 +20,20 @@ internal class BoxingCharacterAnimation : MonoBehaviour
     const string BLOCKING = "character_blocking";
 
     public UnityAction OnResetCallBack { get; set; }
+    /*public static BoxingCharacterAnimation Instance { get; private set; }
 
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    /*private void Update()
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && currentState is ATTACK_1 or ATTACK_2 or ATTACK_3 or DEFENSE_1 or DEFENSE_2)
+        {
+            ResetAnimation();
+        }
+    }*/
 
     void SetAnimationState(string state)
     {
@@ -37,7 +50,7 @@ internal class BoxingCharacterAnimation : MonoBehaviour
 
     public void SetAnimationState(AnimationState state)
     {
-        SetAnimationState(GetAnimationID(state));       
+        SetAnimationState(GetAnimationID(state));
     }
 
     string GetAnimationID(AnimationState state)
@@ -59,7 +72,6 @@ internal class BoxingCharacterAnimation : MonoBehaviour
     IEnumerator ResetAnimation(WaitForSeconds wait)
     {
         yield return wait;
-
         SetAnimationState(AnimationState.Idle);
         OnResetCallBack.Invoke();
     }

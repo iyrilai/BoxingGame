@@ -11,7 +11,7 @@ public class LevelManager : MonoBehaviour
         Instance = this;
     }
 
-    private void Start()
+    public void StartLevel()
     {
         IsLevelStarted = true;
     }
