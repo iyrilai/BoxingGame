@@ -20,20 +20,6 @@ internal class BoxingCharacterAnimation : MonoBehaviour
     const string BLOCKING = "character_blocking";
 
     public UnityAction OnResetCallBack { get; set; }
-    /*public static BoxingCharacterAnimation Instance { get; private set; }
-
-    private void Awake()
-    {
-        Instance = this;
-    }
-
-    /*private void Update()
-    {
-        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && currentState is ATTACK_1 or ATTACK_2 or ATTACK_3 or DEFENSE_1 or DEFENSE_2)
-        {
-            ResetAnimation();
-        }
-    }*/
 
     void SetAnimationState(string state)
     {
