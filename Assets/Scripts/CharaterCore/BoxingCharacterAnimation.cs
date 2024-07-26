@@ -5,6 +5,7 @@ using UnityEngine.Events;
 internal class BoxingCharacterAnimation : MonoBehaviour
 {
     [SerializeField] Animator animator;
+    [SerializeField] float animationResetOffset = 1.6f;
 
 
     string currentState = string.Empty;
@@ -24,14 +25,13 @@ internal class BoxingCharacterAnimation : MonoBehaviour
     void SetAnimationState(string state)
     {
         if (state == currentState) return;
-        Debug.Log($"Animation ID: {state} + {currentState}");
 
         currentState = state;
         animator.CrossFade(state, 0.3f);
 
         if (state is ATTACK_1 or ATTACK_2 or ATTACK_3 or DEFENSE_1 or DEFENSE_2)
         {
-            StartCoroutine(ResetAnimation(new(animator.GetCurrentAnimatorStateInfo(0).length)));
+            StartCoroutine(ResetAnimation(new(animator.GetCurrentAnimatorStateInfo(0).length - animationResetOffset)));
         }
     }
 

@@ -67,7 +67,7 @@ public class PlayerInputHandle : MonoBehaviour
                 return;
             }
 
-            mechanics.Defense(1);
+            mechanics.Defense(2);
             rmbHoldTime = 0f;
         }
     }

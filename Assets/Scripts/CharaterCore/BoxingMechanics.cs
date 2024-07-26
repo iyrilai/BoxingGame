@@ -6,6 +6,7 @@ internal class BoxingMechanics : MonoBehaviour
 
     public bool OnAttack { get; private set; }
     public bool OnDefense { get; private set; }
+    public bool IsBlocking {  get; private set; }
 
     private void Start()
     {
@@ -14,7 +15,6 @@ internal class BoxingMechanics : MonoBehaviour
 
     void OnAttackDefenseReset()
     {
-        Debug.Log("On Reset");
         OnDefense = false;
         OnAttack = false;
     }
@@ -54,11 +54,13 @@ internal class BoxingMechanics : MonoBehaviour
     {
         animator.SetAnimationState(BoxingCharacterAnimation.AnimationState.Blocking);
         OnDefense = true;
+        IsBlocking = true;
     }
 
     public void UnBlock()
     {
         animator.SetAnimationState(BoxingCharacterAnimation.AnimationState.Idle);
         OnDefense = false;
+        IsBlocking = false;
     }
 }

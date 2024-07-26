@@ -57,17 +57,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 021fcf7f8aee5a3409500e82c332b5c2, type: 3}
---- !u!114 &6264878446517985136 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6454609501979773664, guid: 021fcf7f8aee5a3409500e82c332b5c2, type: 3}
-  m_PrefabInstance: {fileID: 1108502222635341200}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6498755905955355385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8daaa459effe584c8ea23aa2b16db12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6264878446517985137 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6454609501979773665, guid: 021fcf7f8aee5a3409500e82c332b5c2, type: 3}
@@ -97,5 +86,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  movement: {fileID: 6264878446517985136}
   mechanics: {fileID: 6264878446517985137}
+  playerRange: 1.5
+  speed: 1.5

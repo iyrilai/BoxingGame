@@ -99,17 +99,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c5444d3e5649ff4fa66b0e8662afe69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &241326772761067223 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6454609501979773664, guid: 021fcf7f8aee5a3409500e82c332b5c2, type: 3}
-  m_PrefabInstance: {fileID: 6542107719588607031}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1123706081587149662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8daaa459effe584c8ea23aa2b16db12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1123706081587149662 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6147986291630395241, guid: 021fcf7f8aee5a3409500e82c332b5c2, type: 3}
@@ -128,7 +117,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  movement: {fileID: 241326772761067223}
+  movement: {fileID: 0}
+  mechanics: {fileID: 241326772761067222}
 --- !u!114 &6454609501979773669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8b783452cd14cc478d4bc952a0f5c48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rmbHoldTimeLimit: 0.15
+  rmbHoldTimeLimit: 0.2
   mechanics: {fileID: 241326772761067222}
 --- !u!4 &5962615143778480999 stripped
 Transform:
