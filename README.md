@@ -17,5 +17,8 @@ RMB + 2 - defense_2
 ### blocking with hands
 Hold RMB
 
-### movement
+### movement 
 **WASD**
+
+### Look Around
+Use Mouse
